@@ -2,7 +2,7 @@ package org.example.MontyHall;
 
 import org.junit.jupiter.api.BeforeAll;
 
-public abstract class AbstractTest {
+public abstract class AbstractTestMH {
     static Player gamerTrue;
     static Player gamerFalse;
 

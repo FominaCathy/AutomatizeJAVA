@@ -10,7 +10,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PlayGameTest extends AbstractTest {
+public class PlayGameTest extends AbstractTestMH {
 
     static List<Door> doors;
 
