@@ -27,7 +27,13 @@ public class Star implements IPublisher {
     }
 
 
-    public void notifySubscriber(String message) {
-        subscriberList.forEach(item -> item.sendMessage(message));
+    public int notifySubscriber(String message) {
+        int count = 0;
+        for (ISubscriber item : subscriberList){
+            item.sendMessage(message);
+            count++;
+        }
+        return count;
+
     }
 }

@@ -4,17 +4,21 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 
 public abstract class AbstractTestPO {
-    static Star sun = new Star();
-
+    static Star sun;
+    static ISubscriber priest;
+    static ISubscriber astro;
 
     @BeforeAll
-    static void initSun(){
-//        ISubscriber priest = new Gentile();
-//        ISubscriber astro = new Astronom();
+    static void initSubscriber() {
 
-        sun.addSender(new Gentile());
-        sun.addSender(new Astronom());
-
+        priest = new Gentile();
+        astro = new Astronom();
     }
+
+    @BeforeEach
+    void initStar() {
+        sun = new Star();
+    }
+
 
 }
