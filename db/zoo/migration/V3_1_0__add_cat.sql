@@ -1,0 +1,1 @@
+INSERT INTO cats (id, name, year_b, breed_id) VALUES (5, "Mursik", 2022, 1);
