@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+
+        <property name="connection.driver_class">org.sqlite.JDBC</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.SQLiteDialect</property>
+
+        <property name="connection.url">jdbc:sqlite:projectSQL.db</property>
+        <mapping class="org.example.ProjectSQL.CourierInfoEntity"/>
+        <mapping class="org.example.ProjectSQL.CustomersEntity"/>
+        <mapping class="org.example.ProjectSQL.DeliveryEntity"/>
+        <mapping class="org.example.ProjectSQL.OrdersEntity"/>
+        <mapping class="org.example.ProjectSQL.OrdersProductsEntity"/>
+        <mapping class="org.example.ProjectSQL.ProductsEntity"/>
+
+
+    </session-factory>
+</hibernate-configuration>
